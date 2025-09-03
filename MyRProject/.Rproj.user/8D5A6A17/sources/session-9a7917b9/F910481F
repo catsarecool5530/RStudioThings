@@ -1,7 +1,7 @@
 {
     "id": "F910481F",
-    "path": "C:/Users/k1341914/Downloads/RStudioThings/MyRProject/HelloWorld.R",
-    "project_path": "HelloWorld.R",
+    "path": "C:/Users/k1341914/Downloads/RStudioThings/MyRProject/Backpack.R",
+    "project_path": "Backpack.R",
     "type": "r_source",
     "hash": "95462051",
     "contents": "",
@@ -12,7 +12,7 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "2,44",
+        "cursorPosition": "4,0",
         "scrollLine": "0"
     },
     "folds": "",
@@ -20,7 +20,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1756911955125,
+    "last_content_update": 1756911955,
     "read_only": false,
     "read_only_alternatives": []
 }
