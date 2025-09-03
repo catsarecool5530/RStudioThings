@@ -1,4 +1,4 @@
 library(readr)
 Backpack <- read_csv("Backpack.csv")
-Backpack2 <- BackPack[, "Ratio"]
-View(Backpack2)
+Backpack2 <- Backpack[, c("Ratio", "Major")]
+View(Backpack)
