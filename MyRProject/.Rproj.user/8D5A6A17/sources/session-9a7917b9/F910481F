@@ -3,24 +3,24 @@
     "path": "C:/Users/k1341914/Downloads/RStudioThings/MyRProject/Backpack.R",
     "project_path": "Backpack.R",
     "type": "r_source",
-    "hash": "95462051",
+    "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1756909386403.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "4,0",
-        "scrollLine": "0"
+        "cursorPosition": "45,19",
+        "scrollLine": "26"
     },
     "folds": "",
-    "lastKnownWriteTime": 1756911955,
+    "lastKnownWriteTime": 1756996070,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1756911955,
+    "last_content_update": 1756996969505,
     "read_only": false,
     "read_only_alternatives": []
 }
