@@ -71,6 +71,9 @@ plot(BackpackWeight, BodyMass, main="Awesome Scatterplot!!", xlab="Backpack Weig
 #yesterday, we made a scatterplot of these data according to BackpackWeight and BodyWeight.
 #Re-create this plot, but find a way to show different colors according to conditions of the variable Sex
 #(Female or Male)
+plot(BackpackWeight, BodyMass, col=Color, pch=19)
+Backpack$Color <- ifelse(Backpack$Sex=="Female", "pink", "blue")
 
 #Challenge2
 #Add a legend to identify the sexes by their representative color
+legend("bottomright", legend=c("Female", "Male"), fill=c("pink", "blue"), cex=0.75)

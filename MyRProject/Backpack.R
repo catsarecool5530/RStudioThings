@@ -12,11 +12,11 @@ print(Backpack[1, ])
 
 print(Backpack[, "Major"])
 #Create a new transformed column according to an arithmetic algorithm
-newCol <- Backpack[, "BodyWeight"] / 2.2;
-print(newCol)
+Backpack$BodyMass <- Backpack$BodyWeight / 2.2;
+print(Backpack$BodyMass)
 
 #Reorder Columns
-Backpack <- Backpack[, c("Major", "BackpackWeight", "BodyWeight", "BackProblems", "Ratio", "Year", "Sex", "Status", "Units")]
+Backpack <- Backpack[, c("Major", "BackpackWeight", "BodyWeight","BodyMass", "BackProblems", "Ratio", "Year", "Sex", "Status", "Units")]
 
 #we just created a new dataset... granted, it had the same name as the dataset that was transformed to
 # make it, but it is new just the same.
@@ -26,30 +26,54 @@ print(Major)
 #Since the variable names are the same as the variable names in our previously attached dataset, you
 #will see messages stating that they are masked... this is not a problem.
 #View all values of a particular variable in ascending order
-print(Backpack[order(BackpackWeight, decreasing=FALSE), "BackpackWeight"], n=100)
+sort(BackpackWeight)
 #View all values of a particular variable in descending order
-
+print(Backpack[order(BackpackWeight, decreasing=TRUE), "BackpackWeight"])
 
 #Sort dataset by two variables
+sorted <- Backpack[order(BackpackWeight, BodyWeight, decreasing=TRUE),];
+sorted
+
 #Calculate some summary statistics for a variable
 #mean
+mean <- mean(BodyMass)
+mean
 #median
+median <- median(BodyMass)
+median
 #variance
+var(BackpackWeight)
 #standard deviation
+sqrt(var(BackpackWeight))
+
 #5-number summary
+summary(BackpackWeight)
 #Visual Summaries
 #Create a stemplot for a variable
+stem(BackpackWeight)
 #Create a boxplot for a variable
+boxplot(BackpackWeight)
 #Create a histogram for a variable
+hist(BackpackWeight)
 #look up the help for histograms
+help("hist")
 #adjust colors
+hist(BackpackWeight, col="palegreen4")
 #adjust bin sizes
+hist(BackpackWeight, col="palegreen4", breaks=5)
 #Create a scatterplot of two variables
+plot(BackpackWeight, BodyMass)
 #Label the plot
+plot(BackpackWeight, BodyMass, main="Awesome Scatterplot!!")
 #Label the axes
+plot(BackpackWeight, BodyMass, main="Awesome Scatterplot!!", xlab="Backpack Weight!", ylab="Body Mass")
 #Challenge
 #yesterday, we made a scatterplot of these data according to BackpackWeight and BodyWeight.
 #Re-create this plot, but find a way to show different colors according to conditions of the variable Sex
 #(Female or Male)
+plot(BackpackWeight, BodyMass, col=Color, pch=19)
+Backpack$Color <- ifelse(Backpack$Sex=="Female", "pink", "blue")
+
 #Challenge2
 #Add a legend to identify the sexes by their representative color
+legend("bottomright", legend=c("Female", "Male"), fill=c("pink", "blue"), cex=0.75)
