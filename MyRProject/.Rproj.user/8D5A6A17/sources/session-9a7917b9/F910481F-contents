@@ -44,21 +44,33 @@ median
 #variance
 var(BackpackWeight)
 #standard deviation
+sqrt(var(BackpackWeight))
 
 #5-number summary
+summary(BackpackWeight)
 #Visual Summaries
 #Create a stemplot for a variable
+stem(BackpackWeight)
 #Create a boxplot for a variable
+boxplot(BackpackWeight)
 #Create a histogram for a variable
+hist(BackpackWeight)
 #look up the help for histograms
+help("hist")
 #adjust colors
+hist(BackpackWeight, col="palegreen4")
 #adjust bin sizes
+hist(BackpackWeight, col="palegreen4", breaks=5)
 #Create a scatterplot of two variables
+plot(BackpackWeight, BodyMass)
 #Label the plot
+plot(BackpackWeight, BodyMass, main="Awesome Scatterplot!!")
 #Label the axes
+plot(BackpackWeight, BodyMass, main="Awesome Scatterplot!!", xlab="Backpack Weight!", ylab="Body Mass")
 #Challenge
 #yesterday, we made a scatterplot of these data according to BackpackWeight and BodyWeight.
 #Re-create this plot, but find a way to show different colors according to conditions of the variable Sex
 #(Female or Male)
+
 #Challenge2
 #Add a legend to identify the sexes by their representative color
