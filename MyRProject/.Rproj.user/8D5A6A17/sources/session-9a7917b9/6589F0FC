@@ -1,26 +1,26 @@
 {
-    "id": "5E45B0C2",
-    "path": "C:/Users/k1341914/Downloads/RStudioThings/MyRProject/Hello.R",
-    "project_path": "Hello.R",
+    "id": "6589F0FC",
+    "path": "C:/Users/k1341914/Downloads/RStudioThings/MyRProject/Backpack.R",
+    "project_path": "Backpack.R",
     "type": "r_source",
     "hash": "0",
     "contents": "",
-    "dirty": true,
-    "created": 1756912869987.0,
+    "dirty": false,
+    "created": 1757428102579.0,
     "source_on_save": false,
     "relative_order": 3,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "1,0",
-        "scrollLine": "0"
+        "cursorPosition": "69,10",
+        "scrollLine": "63"
     },
     "folds": "",
-    "lastKnownWriteTime": 1756912869,
+    "lastKnownWriteTime": 1757426650,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1756912878526,
+    "last_content_update": 1757426650,
     "read_only": false,
     "read_only_alternatives": []
 }
