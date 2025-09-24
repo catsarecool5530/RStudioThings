@@ -31,7 +31,7 @@ GroupNumeric=as.numeric(Group=="Incentive")
 mu.control=mean(WeightLoss[GroupNumeric==0])
 mu.incentive=mean(WeightLoss[GroupNumeric==1])
 # Now we're taking steps to make a column that will contain the correct mean for the condition of
-Group variable
+# Group variable
 Fit=mu.control*(1-GroupNumeric)+mu.incentive*GroupNumeric
 # Find Residuals (Difference from observed values and mean)
 Resid=WeightLoss-Fit
@@ -68,3 +68,4 @@ den=sqrt(((nc-1)*sdc^2+(ni-1)*sdi^2)/(nc+ni-2))
 effect=num/den
 effect
 #This tells us that the effect of the incentive is 127% as big as the typical size of
+
