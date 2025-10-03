@@ -1,0 +1,11 @@
+PalmBeach <- read.csv(file.choose())
+attach(PalmBeach)
+View(PalmBeach)
+plot(Buchanan ~ Bush)
+abline(lm(Buchanan ~ Bush))
+bush.lm <- lm(Buchanan ~ Bush)
+library(MASS)
+# see outlier
+plot(Bush, stdres(bush.lm))
+abline(h=2, lty=2)
+abline(h=-2, lty=2)
