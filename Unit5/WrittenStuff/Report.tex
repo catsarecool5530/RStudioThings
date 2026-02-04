@@ -23,6 +23,12 @@ This is my 4th six weeks project for Data Science, for Unit 5: Analysis of Varia
 \section{Data Description}
 I limited scope to wet cat food because dry food can potentially be 5 to 10 times cheaper than wet food, which would likely result in extremely high variances. All data was collected from \url{https://www.chewy.com/} which sells cat food from many different companies. I collected data from 5 different companies, \emph{Fancy Feast}, \emph{Chewy}, \emph{Blue Buffalo}, \emph{Sheba}, and \emph{Applaws}. For each company I randomly selected a few product offerings from the website, collecting data on manufacturer, price, weight in ounces, and rating. I computed the price per ounce of each product from this data. In total there are 26 data points, with each company having about 5 data points.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/box.png}
+    \caption{The data, as a boxplot.}
+\end{figure}
+
 \section{Methodology}
 ANOVA is the optimal method for this data because it contains many categorical groups defined using quantitative data. Price itself is extremely strongly correlated with the weight in ounces, so to reduce the effect of this confounding variable, we use price per ounce. Although there are concerns that price per ounce is still influenced by the total price, an ANOVA over the linear regression shows that it is no longer significant ($p = 0.51$).
 
