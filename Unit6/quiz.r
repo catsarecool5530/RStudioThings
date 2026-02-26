@@ -1,0 +1,10 @@
+Alfafa <- read.csv("Files/Alfafa.csv")
+View(Alfafa)
+attach(Alfafa)
+mean(Growth)
+sd(Growth)
+aov <- aov(Growth ~ Treatment + Cup)
+summary(aov)
+library(agricolae)
+res <- LSD.test(aov, "Treatment")
+res
